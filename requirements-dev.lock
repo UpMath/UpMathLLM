@@ -10,24 +10,51 @@
 #   universal: false
 
 -e file:.
+aiohappyeyeballs==2.6.1
+    # via aiohttp
+aiohttp==3.12.15
+    # via fsspec
+aiosignal==1.4.0
+    # via aiohttp
 appnope==0.1.4
     # via ipykernel
 asttokens==3.0.0
     # via stack-data
+attrs==25.3.0
+    # via aiohttp
 certifi==2025.8.3
     # via requests
 charset-normalizer==3.4.2
     # via requests
 comm==0.2.3
     # via ipykernel
+datasets==4.0.0
+    # via upmathllm
 debugpy==1.8.16
     # via ipykernel
 decorator==5.2.1
     # via ipython
+dill==0.3.8
+    # via datasets
+    # via multiprocess
 executing==2.2.0
     # via stack-data
+filelock==3.18.0
+    # via datasets
+    # via huggingface-hub
+frozenlist==1.7.0
+    # via aiohttp
+    # via aiosignal
+fsspec==2025.3.0
+    # via datasets
+    # via huggingface-hub
+hf-xet==1.1.7
+    # via huggingface-hub
+huggingface-hub==0.34.4
+    # via datasets
 idna==3.10
     # via requests
+    # via yarl
 ipykernel==6.30.1
     # via upmathllm
 ipython==9.4.0
@@ -46,13 +73,22 @@ jupyter-core==5.8.1
 matplotlib-inline==0.1.7
     # via ipykernel
     # via ipython
+multidict==6.6.3
+    # via aiohttp
+    # via yarl
+multiprocess==0.70.16
+    # via datasets
 nest-asyncio==1.6.0
     # via ipykernel
 numpy==2.3.2
+    # via datasets
     # via pandas
 packaging==25.0
+    # via datasets
+    # via huggingface-hub
     # via ipykernel
 pandas==2.3.1
+    # via datasets
     # via upmathllm
 parso==0.8.4
     # via jedi
@@ -62,12 +98,17 @@ platformdirs==4.3.8
     # via jupyter-core
 prompt-toolkit==3.0.51
     # via ipython
+propcache==0.3.2
+    # via aiohttp
+    # via yarl
 psutil==7.0.0
     # via ipykernel
 ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.3
     # via stack-data
+pyarrow==21.0.0
+    # via datasets
 pygments==2.19.2
     # via ipython
     # via ipython-pygments-lexers
@@ -76,10 +117,15 @@ python-dateutil==2.9.0.post0
     # via pandas
 pytz==2025.2
     # via pandas
+pyyaml==6.0.2
+    # via datasets
+    # via huggingface-hub
 pyzmq==27.0.1
     # via ipykernel
     # via jupyter-client
 requests==2.32.4
+    # via datasets
+    # via huggingface-hub
     # via upmathllm
 six==1.17.0
     # via python-dateutil
@@ -88,15 +134,25 @@ stack-data==0.6.3
 tornado==6.5.2
     # via ipykernel
     # via jupyter-client
+tqdm==4.67.1
+    # via datasets
+    # via huggingface-hub
 traitlets==5.14.3
     # via ipykernel
     # via ipython
     # via jupyter-client
     # via jupyter-core
     # via matplotlib-inline
+typing-extensions==4.14.1
+    # via aiosignal
+    # via huggingface-hub
 tzdata==2025.2
     # via pandas
 urllib3==2.5.0
     # via requests
 wcwidth==0.2.13
     # via prompt-toolkit
+xxhash==3.5.0
+    # via datasets
+yarl==1.20.1
+    # via aiohttp
