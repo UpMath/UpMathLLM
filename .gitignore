@@ -10,5 +10,7 @@ wheels/
 
 # venv
 .venv
+.env
 
 CLAUDE.md
+/src/upmathllm/results
